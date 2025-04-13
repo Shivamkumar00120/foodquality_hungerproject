@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1604908812150-59b4c3d49702') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}a{
+  color:whitesmoke;
+
+}
+#link {
+  font-style: oblique;
+  font-size: 30px;
+  
+  height:100%;
+  width:100%;
+  background-color:black;
+  justify-content: space-around;
+  display: flex;
+  flex:1 1 0;
+  background-image: url(Black\ Hand\ Drawn\ Menu\ Background\ Picture\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: grey;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background:blueviolet;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 1.5rem;
+  background: #ff9f1c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ff6f00;
+}
+
+.info-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  /* background: white */
+
+  
+}
+
+.info-section:nth-child(even) {
+  background:white
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #222;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+
+  .hero{
+    padding: 2rem 1rem;
+    text-align: centre;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+#link{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  background-image: 80px;
+}
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .cta-btn{
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .hero p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .info-section{
+    padding: 2rem 1rem;
+  }
+  footer{
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

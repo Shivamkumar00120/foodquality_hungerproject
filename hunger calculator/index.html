@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Waste Calculator</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1><span>🥦</span> Food Waste Calculator <span>🥕</span></h1>
+    <div class="toggle" onclick="toggleDarkMode()">🌙 Toggle Mode</div>
+  </header>
+
+  <main id="pdfContent">
+    <!-- Left side: Form -->
+    <div class="container">
+      <p>Enter your food waste (kg) for each day:</p>
+      <form id="wasteForm">
+        <div class="inputs">
+          <input type="number" placeholder="Monday" step="0.01" required>
+          <input type="number" placeholder="Tuesday" step="0.01" required>
+          <input type="number" placeholder="Wednesday" step="0.01" required>
+          <input type="number" placeholder="Thursday" step="0.01" required>
+          <input type="number" placeholder="Friday" step="0.01" required>
+          <input type="number" placeholder="Saturday" step="0.01" required>
+          <input type="number" placeholder="Sunday" step="0.01" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Calculate</button>
+          <button type="button" onclick="saveAsPDF()">Save PDF</button>
+        </div>
+        <div class="progress-bar" id="progressBar"></div>
+      </form>
+    </div>
+
+    
+    <div class="results">
+      <div id="result"></div>
+      <canvas id="wasteChart"></canvas>
+      <canvas id="pieChart"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Food Waste Tracker | Built with 💙
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
